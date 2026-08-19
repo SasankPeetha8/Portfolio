@@ -1,0 +1,9 @@
+main, footer {
+    visibility: hidden;
+}
+
+body {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    background-color: #252020;
+}
