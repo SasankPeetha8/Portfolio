@@ -12,8 +12,26 @@ body {
 ---------- USER PROFILE --------------
 ------------------------------------*/
 
+/*---------- Heading 1 -------------*/
+h1 { 
+    font-size: 60px;
+    margin-top: 0.38em;
+    margin-bottom: 0px;
+}
+
+h2 { 
+    font-size: 30px; 
+    margin: 0px;
+}
+
 img { width: 15vw; }
-figure { grid-area: image; }
+figure {
+    grid-area: image;
+    margin-top: 1.3em;
+    margin-left: 1.3em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+}
 #userProfile > h1 { grid-area: userName; }
 #userProfile > h2 { grid-area: userRole; }
 #userProfile > p { grid-area: text; }
@@ -26,7 +44,13 @@ figure { grid-area: image; }
     "image text"
     "image contactInformation"
     ;
+    border-color: green;
+    border-style: solid;
+    border-width: 1px;
+    padding-right: 1em;
 }
+
+/*------- Address Item Assignment ----------*/
 
 #emailIcon { grid-area: emailIcon; }
 #emailText { grid-area: email; }
@@ -39,6 +63,28 @@ figure { grid-area: image; }
 #sketchFabIcon { grid-area: sketchFabIcon; }
 #sketchFabText { grid-area: sketchFab; }
 
+/*-------------- Adjusting Padding -------------*/
+/*-------------- Icons -------------------------*/
+#emailIcon,
+#phoneIcon,
+#linkedInIcon,
+#githubIcon,
+#sketchFabIcon {
+    margin-top: 0.3em;
+    margin-right: 1em;
+}
+
+/*------------------- Text -----------------------*/
+#emailText,
+#phoneText,
+#linkedInText,
+#githubText,
+#sketchFabText {
+    margin-right: 5em;
+}
+
+/*-------------------- Address ---------------------*/
+
 address {
     display: grid;
     grid-area: contactInformation;
@@ -46,7 +92,10 @@ address {
     "emailIcon email phoneIcon phone linkedInIcon linkedIn"
     "githubIcon github sketchFabIcon sketchFab . ."
     ;
-    margin-bottom: 2em;
+    justify-content: start;
+    margin-left: 1em;
+    margin-bottom: 2.6em;
+    row-gap: 0.3em;
 }
 
 /*------------------------------------
