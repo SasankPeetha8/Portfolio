@@ -8,8 +8,11 @@ body {
     /* background-color: #252020; */
 }
 
-img { width: 15vw; }
+/*------------------------------------
+---------- USER PROFILE --------------
+------------------------------------*/
 
+img { width: 15vw; }
 figure { grid-area: image; }
 #userProfile > h1 { grid-area: userName; }
 #userProfile > h2 { grid-area: userRole; }
@@ -43,4 +46,19 @@ address {
     "emailIcon email phoneIcon phone linkedInIcon linkedIn"
     "githubIcon github sketchFabIcon sketchFab . ."
     ;
+    margin-bottom: 2em;
+}
+
+/*------------------------------------
+----------- NAVIGATION ---------------
+------------------------------------*/
+nav {
+    display: flexbox;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+nav > a {
+    margin-left: 1em;
+    margin-right: 1em;
 }
