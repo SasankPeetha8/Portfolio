@@ -5,5 +5,42 @@ main, footer {
 body {
     margin-left: 15vw;
     margin-right: 15vw;
-    background-color: #252020;
+    /* background-color: #252020; */
+}
+
+img { width: 15vw; }
+
+figure { grid-area: image; }
+#userProfile > h1 { grid-area: userName; }
+#userProfile > h2 { grid-area: userRole; }
+#userProfile > p { grid-area: text; }
+
+#userProfile {
+    display: grid;
+    grid-template-areas: 
+    "image userName"
+    "image userRole"
+    "image text"
+    "image contactInformation"
+    ;
+}
+
+#emailIcon { grid-area: emailIcon; }
+#emailText { grid-area: email; }
+#phoneIcon { grid-area: phoneIcon; }
+#phoneText { grid-area: phone; }
+#linkedInIcon { grid-area: linkedInIcon; }
+#linkedInText { grid-area: linkedIn; }
+#githubIcon { grid-area: githubIcon; }
+#githubText { grid-area: github; }
+#sketchFabIcon { grid-area: sketchFabIcon; }
+#sketchFabText { grid-area: sketchFab; }
+
+address {
+    display: grid;
+    grid-area: contactInformation;
+    grid-template-areas: 
+    "emailIcon email phoneIcon phone linkedInIcon linkedIn"
+    "githubIcon github sketchFabIcon sketchFab . ."
+    ;
 }
