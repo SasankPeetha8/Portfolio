@@ -1,5 +1,4 @@
-main,
-footer {
+main {
     visibility: hidden;
 }
 
@@ -163,5 +162,21 @@ footer {
 
     }
 
+    /*-----------------------------------------------------------
+    ------------------------- FOOTER ----------------------------
+    -----------------------------------------------------------*/
+    #contactMe {
+        display: none;
+    }
+
+    #copyright>h2 {
+        margin-bottom: 20px;
+    }
+
+    .CopyrightInformation {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 13px;
+    }
 
 }
