@@ -166,7 +166,28 @@ main {
     ------------------------- FOOTER ----------------------------
     -----------------------------------------------------------*/
     #contactMe {
-        display: none;
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    form>label {
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    form>button {
+        margin-top: 6%
+    }
+
+    #copyright {
+        margin-top: 10%;
     }
 
     #copyright>h2 {
