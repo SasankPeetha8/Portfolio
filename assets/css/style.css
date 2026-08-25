@@ -1,7 +1,4 @@
 #skills,
-#experience,
-#additionalExperience,
-#projects,
 #education,
 #achievements {
     visibility: hidden;
@@ -161,16 +158,131 @@ body {
     /*-----------------------------------------------------------
     ------------------------- MAIN ------------------------------
     -----------------------------------------------------------*/
+
+    /*-------------------- ABOUT ME ---------------------------*/
     #aboutMe {
         padding-top: 6%;
         padding-left: 3%;
         padding-right: 3%;
         padding-bottom: 6%;
         background-color: #232700;
-        text-align: center;
+        text-align: justify;
     }
 
-    #aboutMe > h2 {
+    #aboutMe>h2 {
+        padding-bottom: 2%;
+    }
+
+    /*-------------------- EXPERIENCE ---------------------------*/
+    #experience>h2,
+    #additionalExperience>h2 {
+        padding-bottom: 2%;
+    }
+
+    #experience,
+    #additionalExperience {
+        padding-top: 6%;
+        padding-bottom: 6%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    /*------------------- Aligning Items ------------------------*/
+    .JobInfo>.Title {
+        grid-area: jobTitle;
+        padding-bottom: 1%;
+        margin: 0%;
+    }
+
+    .JobInfo>.Organisation {
+        grid-area: organisation;
+        padding-bottom: 1%;
+        margin: 0%;
+    }
+
+    .JobInfo>.Timeline {
+        grid-area: timeline;
+        padding-bottom: 1%;
+        margin: 0%;
+    }
+
+    .JobInfo>.Description {
+        grid-area: description;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 1%;
+        margin: 0%;
+        text-align: justify;
+    }
+
+    .JobInfo>.Timeline {
+        grid-area: timeline;
+        padding-bottom: 1%;
+        margin: 0%;
+    }
+
+    .JobInfo {
+        display: grid;
+        grid-template-areas:
+            "jobTitle"
+            "organisation"
+            "timeline"
+            "description"
+        ;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    #experience {
+        background-color: #2f3901;
+    }
+
+    #additionalExperience {
+        background-color: #2f3901;
+    }
+
+    /*------------------- PROJECTS ----------------------------*/
+    #projects {
+        padding-top: 6%;
+        padding-bottom: 6%;
+        padding-left: 3%;
+        padding-right: 3%;
+        background-color: #2f3901;
+    }
+
+    .ProjectInfo>.Title {
+        grid-area: projectName;
+        margin: 0%;
+        padding-bottom: 1%;
+    }
+
+    .ProjectInfo>.Timeline {
+        grid-area: timeline;
+        margin: 0%;
+        padding-bottom: 1%;
+    }
+
+    .ProjectInfo>.Description {
+        grid-area: description;
+        margin: 0%;
+        padding-bottom: 1%;
+        padding-left: 3%;
+        text-align: justify;
+        padding-right: 3%;
+    }
+
+    .ProjectInfo {
+        display: grid;
+        grid-template-areas:
+            "projectName"
+            "timeline"
+            "description"
+        ;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    #projects > h2 {
         padding-bottom: 2%;
     }
 
