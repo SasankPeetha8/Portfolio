@@ -51,7 +51,8 @@ body {
     figure {
         padding: 0%;
         margin: 0%;
-        justify-self: center;
+        display: flex;
+        justify-content: center;
     }
 
     /*---------- image --------------*/
@@ -139,18 +140,19 @@ body {
         /* display: flex;
         overflow: scroll;
         flex-wrap: nowrap; */
-        position: relative;
-        display: inline-block;
+        /* position: relative;
+        display: inline-block; */
     }
 
     /*---------- Default Behaviour ---------------*/
 
     nav {
-        margin-top: 3%;
+        margin-top: 0%;
         display: flex;
         flex-direction: column;
-        justify-self: center;
-        width: 300px;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0;
     }
 
     .MenuButton {
@@ -179,16 +181,28 @@ body {
         display: flex;
         flex-direction: column;
         background-color: darkgrey;
-
-
     }
 
     /*-----------------------------------------------------------
     ------------------------- FOOTER ----------------------------
     -----------------------------------------------------------*/
+
+    /*---------------------- Contact Me ---------------------------*/
     #contactMe {
-        margin-top: 10%;
+        /* margin-top: 10%; */
+        margin-top: 0%;
+        padding-top: 6%;
         width: 100%;
+        background-color: #a4b25f;
+    }
+
+    #contactMe>h2,
+    form>label {
+        color: #232700;
+    }
+
+    #contactMe>h2 {
+        margin: 0;
     }
 
     form>label {
@@ -201,19 +215,25 @@ body {
         flex-direction: column;
         padding-left: 3%;
         padding-right: 3%;
+        padding-bottom: 6%;
     }
 
     form>button {
         margin-top: 6%
     }
 
+    /*---------------------- Copyright ---------------------------*/
+
     #copyright {
         margin-top: 0%;
+        padding-right: 2%;
+        padding-left: 2%;
         background-color: #232700;
     }
 
     #copyright>h2 {
         padding-top: 6%;
+        margin-top: 0;
         margin-bottom: 10px;
     }
 
