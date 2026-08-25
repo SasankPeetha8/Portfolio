@@ -148,6 +148,8 @@ body {
 
     .MenuButton {
         width: 100%;
+        padding-top: 2%;
+        padding-bottom: 1%;
         font-size: 18px;
         border: 0;
         background-color: #a4b25f;
@@ -214,7 +216,21 @@ body {
     }
 
     form>button {
-        margin-top: 6%
+        margin-top: 6%;
+        width: 20%;
+        align-self: center;
+        border-radius: 3mm;
+        border-width: 2px;
+        border-color: #5a6232;
+        border-style: solid;
+        padding: 1%;
+        background-color: #5a6232;
+        color: #d6e881;
+    }
+
+    form>button:hover {
+        border-color: #d6e881;
+
     }
 
     /*---------------------- Copyright ---------------------------*/
