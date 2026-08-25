@@ -1,8 +1,3 @@
-#skills,
-#achievements {
-    visibility: hidden;
-}
-
 /*------------------------------------
 ------------ Layout ------------------
 ------------------------------------*/
@@ -233,7 +228,7 @@ body {
     }
 
     #experience {
-        background-color: #2f3901;
+        background-color: #232700;
     }
 
     #additionalExperience {
@@ -246,7 +241,7 @@ body {
         padding-bottom: 6%;
         padding-left: 3%;
         padding-right: 3%;
-        background-color: #2f3901;
+        background-color: #232700;
     }
 
     .ProjectInfo>.Title {
@@ -310,6 +305,20 @@ body {
 
     #education>h2 {
         padding-bottom: 2%;
+    }
+
+    /*---------------------- Achivements -----------------------*/
+    #achievements {
+        padding-top: 6%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 6%;
+        background-color: #232700;
+        text-align: justify;
+    }
+
+    #achievements>h2 {
+        padding-bottom: 3%;
     }
 
     /*-----------------------------------------------------------
