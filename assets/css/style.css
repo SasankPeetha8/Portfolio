@@ -6,6 +6,22 @@ main {
 ------------ Layout ------------------
 ------------------------------------*/
 
+h1,
+h2,
+h3,
+label,
+a,
+p,
+svg {
+    color: #d7d728e3;
+}
+
+html,
+body {
+    /* background-color: #232700; */
+    margin: 0;
+    padding: 0;
+}
 
 @media (max-width: 720px) {
 
@@ -28,6 +44,7 @@ main {
     #userProfile {
         padding: 2%;
         margin: 0;
+        background-color: #232700;
     }
 
     /*---------- figure --------------*/
@@ -44,6 +61,8 @@ main {
         object-fit: cover;
         object-position: center;
         overflow: hidden;
+        border: 1px #a4b25f solid;
+        border-radius: 6mm;
     }
 
     /*----------- Text ---------------*/
@@ -111,6 +130,8 @@ main {
         justify-content: center;
         column-gap: 10px;
         row-gap: 10px;
+        padding-left: 20%;
+        padding-bottom: 6%;
     }
 
     /*------------- Navigation Bar -----------------------*/
@@ -187,17 +208,21 @@ main {
     }
 
     #copyright {
-        margin-top: 10%;
+        margin-top: 0%;
+        background-color: #232700;
     }
 
     #copyright>h2 {
-        margin-bottom: 20px;
+        padding-top: 6%;
+        margin-bottom: 10px;
     }
 
     .CopyrightInformation {
         text-align: center;
         margin-top: 10px;
-        margin-bottom: 13px;
+        margin-bottom: 0;
+        padding-bottom: 6%;
+        /* padding-bottom: 13px; */
     }
 
 }
