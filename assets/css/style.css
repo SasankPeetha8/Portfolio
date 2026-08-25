@@ -1,5 +1,4 @@
 #skills,
-#education,
 #achievements {
     visibility: hidden;
 }
@@ -282,7 +281,34 @@ body {
         padding-bottom: 3%;
     }
 
-    #projects > h2 {
+    #projects>h2 {
+        padding-bottom: 2%;
+    }
+
+    /*-------------------- EDUCATION ----------------------------*/
+    .EducationInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 4%;
+        padding-left: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .CourseName,
+    .InstitutionName,
+    .CourseDuration {
+        padding-bottom: 1%;
+        margin: 0%;
+    }
+
+    #education {
+        padding-top: 6%;
+        padding-bottom: 5%;
+        background-color: #2f3901;
+    }
+
+    #education>h2 {
         padding-bottom: 2%;
     }
 
