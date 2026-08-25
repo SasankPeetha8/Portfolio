@@ -1,4 +1,9 @@
-main {
+#skills,
+#experience,
+#additionalExperience,
+#projects,
+#education,
+#achievements {
     visibility: hidden;
 }
 
@@ -78,7 +83,7 @@ body {
     #phoneText,
     #linkedInText,
     #githubText,
-    #sketchFabText { 
+    #sketchFabText {
         border-radius: 4mm;
         padding-left: 4%;
         padding-right: 4%;
@@ -151,6 +156,22 @@ body {
         flex-direction: column;
         color: #a4b25f;
         background-color: #232700;
+    }
+
+    /*-----------------------------------------------------------
+    ------------------------- MAIN ------------------------------
+    -----------------------------------------------------------*/
+    #aboutMe {
+        padding-top: 6%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 6%;
+        background-color: #232700;
+        text-align: center;
+    }
+
+    #aboutMe > h2 {
+        padding-bottom: 2%;
     }
 
     /*-----------------------------------------------------------
