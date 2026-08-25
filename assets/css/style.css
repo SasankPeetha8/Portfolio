@@ -73,66 +73,39 @@ body {
 
     /*----------- Address -------------*/
     /*----------- Listing Items -------------*/
-    #emailIcon {
-        grid-area: emailIcon;
-        padding-top: 1px;
+
+    #emailText,
+    #phoneText,
+    #linkedInText,
+    #githubText,
+    #sketchFabText { 
+        border-radius: 4mm;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
 
-    #phoneIcon {
-        grid-area: phoneIcon;
-        padding-top: 1px;
-    }
-
-    #linkedInIcon {
-        grid-area: linkedInIcon;
-        padding-top: 1px;
-    }
-
-    #githubIcon {
-        grid-area: githubIcon;
-        padding-top: 1px;
-    }
-
-    #sketchFabIcon {
-        grid-area: sketchFabIcon;
-        padding-top: 1px;
-    }
-
-    #emailText {
-        grid-area: emailText;
-    }
-
-    #phoneText {
-        grid-area: phoneText;
-    }
-
-    #linkedInText {
-        grid-area: linkedInText;
-    }
-
-    #githubText {
-        grid-area: githubText;
-    }
-
-    #sketchFabText {
-        grid-area: sketchFabText;
+    #emailText:hover,
+    #emailText:hover>svg,
+    #phoneText:hover,
+    #phoneText:hover>svg,
+    #linkedInText:hover,
+    #linkedInText:hover>svg,
+    #githubText:hover,
+    #githubText:hover>svg,
+    #sketchFabText:hover,
+    #sketchFabText:hover>svg {
+        background-color: #d6e881;
+        color: #232700;
     }
 
     /*-------------- Grid for Address ------------------*/
     address {
-        display: grid;
-        grid-template-areas:
-            "emailIcon emailText"
-            "phoneIcon phoneText"
-            "linkedInIcon linkedInText"
-            "githubIcon githubText"
-            "sketchFabIcon sketchFabText"
-        ;
-        justify-content: center;
-        column-gap: 10px;
-        row-gap: 10px;
-        padding-left: 20%;
-        padding-bottom: 6%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2%;
+        padding-bottom: 3%;
     }
 
     /*------------- Navigation Bar -----------------------*/
