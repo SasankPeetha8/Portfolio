@@ -136,16 +136,7 @@ body {
     }
 
     /*------------- Navigation Bar -----------------------*/
-    nav {
-        /* display: flex;
-        overflow: scroll;
-        flex-wrap: nowrap; */
-        /* position: relative;
-        display: inline-block; */
-    }
-
     /*---------- Default Behaviour ---------------*/
-
     nav {
         margin-top: 0%;
         display: flex;
@@ -158,12 +149,13 @@ body {
     .MenuButton {
         width: 100%;
         font-size: 18px;
+        border: 0;
+        background-color: #a4b25f;
     }
 
     .NavigationBarContent {
         display: none;
         width: 100%;
-
     }
 
     .NavigationBarContent a {
@@ -171,16 +163,19 @@ body {
         text-align: center;
         padding-top: 6px;
         padding-bottom: 6px;
+        text-decoration: none;
     }
 
     .NavigationBarContent a:hover {
-        background-color: bisque;
+        background-color: #a4b25f;
+        color: #232700;
     }
 
     nav:hover .NavigationBarContent {
         display: flex;
         flex-direction: column;
-        background-color: darkgrey;
+        color: #a4b25f;
+        background-color: #232700;
     }
 
     /*-----------------------------------------------------------
