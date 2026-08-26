@@ -74,6 +74,7 @@ address {
     justify-content: space-between;
     padding-top: 2%;
     padding-bottom: 3%;
+    flex-wrap: wrap;
 }
 
 /*-----------------------------------------------------------
@@ -330,8 +331,18 @@ form>button:hover {
 /*---------------------------------------------------------------
 --------------------- Mobile Layout -----------------------------
 ---------------------------------------------------------------*/
+/* 
+@media (max-width: 420px) {
+    img {
+        width: 40vw;
+    }
 
-@media (max-width: 720px) {
+    nav {
+        flex-wrap: wrap;
+    }
+} */
+
+@media (max-width: 920px) {
 
     /*---------- Name --------------*/
     h1 {
@@ -354,6 +365,8 @@ form>button:hover {
         margin: 0;
     }
 
+
+
     /*---------- figure --------------*/
     figure {
         /* padding: 0%; */
@@ -365,7 +378,8 @@ form>button:hover {
 
     /*---------- image --------------*/
     img {
-        width: 70vw;
+        /* width: 70vw; */
+        width: 50vw;
         border: 1px #a4b25f solid;
         border-radius: 6mm;
     }
@@ -545,11 +559,31 @@ form>button:hover {
 
 }
 
+
+@media (min-width: 420px) and (max-width: 920px) {
+    img {
+        width: 300px;
+        height: 300px
+    }
+}
+
 /*---------------------------------------------------------------
 --------------------- Desktop Layout -------------------------
 ---------------------------------------------------------------*/
 
-@media (min-width: 1024px) {
+@media (min-width: 921px) {
+
+    #userProfile {
+        width: 70%;
+    }
+
+    #userProfile>h1 {
+        font-size: 36px;
+    }
+
+    #userProfile>h2 {
+        font-size: 26px;
+    }
 
     /*--------------------------------------------------------
     -------------------- Address Section ---------------------
@@ -563,6 +597,10 @@ form>button:hover {
         padding-bottom: 0.6%;
     } */
 
+    /* img {
+        width: 70%;
+    } */
+
     /*--------------------------------------------------------
     ---------------- Grid for UserProfile --------------------
     --------------------------------------------------------*/
@@ -574,16 +612,24 @@ form>button:hover {
             "figure summary"
             "figure address"
         ;
-        column-gap: 1%;
+        column-gap: 3px;
         padding-left: 3%;
         padding-right: 3%;
-        width: 73%;
+        /* width: 73%; */
+        padding-top: 3%;
         /* border-style: solid;
         border-width: 1px;
         border-color: #d7e88153;
         border-radius: 6mm; */
-
     }
+
+    address {
+        padding-top: 0%;
+        flex-wrap: nowrap;
+        padding-bottom: 3%;
+    }
+
+
 
     /*--------------------------------------------------------
     ------------------- Navigation Menu ----------------------
@@ -607,6 +653,7 @@ form>button:hover {
         padding-top: 1%;
         padding-bottom: 1%;
         margin-top: -1%;
+        font-size: 15px;
     }
 
     .NavigationBarContent {
@@ -798,13 +845,18 @@ form>button:hover {
 
 }
 
+
 @media (min-width: 1024px) {
     #userProfile>h1 {
-        font-size: 38px;
+        font-size: 43px;
+    }
+
+    #userProfile {
+        padding-bottom: 2%;
     }
 
     #userProfile>h2 {
-        font-size: 23px;
+        font-size: 30px;
     }
 
     address {
@@ -813,17 +865,61 @@ form>button:hover {
     }
 }
 
-@media (min-width: 1440px) {
-    /* nav {
-        padding-left: 20%;
-        padding-right: 20%;
-    } */
+@media (min-width: 1640px) {
 
-    .NavigationBarContent {
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%
+    img {
+        width: 300px;
     }
+
+    #userProfile>h1 {
+        font-size: 60px;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+
+    #userProfile>h2 {
+        font-size: 40px;
+        padding-bottom: 1%;
+    }
+
+    #userProfile>p,
+    .NavigationBarContent>a {
+        font-size: 26px;
+        padding-bottom: 1%;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding-bottom: 0.3%;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p,
+    label,
+    input,
+    textarea,
+    button {
+        font-size: 26px;
+    }
+
+    /* body {
+        grid-area: websiteBody;
+        width: 60%;
+        border-color: #d6e881;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    html {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #232700; */
+
+
 }
 
 
