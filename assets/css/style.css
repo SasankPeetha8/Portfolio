@@ -178,6 +178,38 @@ address {
 }
 
 
+/*------------------- PROJECTS ----------------------------*/
+#projects {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #232700;
+}
+
+#projects>h2 {
+    padding-bottom: 2%;
+}
+
+.ProjectInfo>.Title {
+    grid-area: projectName;
+    margin: 0%;
+    padding-bottom: 1%;
+}
+
+.ProjectInfo>.Timeline {
+    grid-area: timeline;
+    margin: 0%;
+    padding-bottom: 1%;
+}
+
+
+.ProjectInfo>.Description {
+    grid-area: description;
+    margin: 0%;
+    padding-bottom: 1%;
+    text-align: justify;
+}
 
 /*---------------------------------------------------------------
 --------------------- Mobile Layout -----------------------------
@@ -326,53 +358,27 @@ address {
         padding-right: 3%;
     }
 
+    /*---------------- Projects -----------------*/
+    .ProjectInfo>.Description {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .ProjectInfo {
+        display: grid;
+        grid-template-areas:
+            "projectName"
+            "timeline"
+            "description"
+        ;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
 }
 
 
-/*------------------- PROJECTS ----------------------------*/
-#projects {
-    padding-top: 6%;
-    padding-bottom: 6%;
-    padding-left: 3%;
-    padding-right: 3%;
-    background-color: #232700;
-}
 
-.ProjectInfo>.Title {
-    grid-area: projectName;
-    margin: 0%;
-    padding-bottom: 1%;
-}
-
-.ProjectInfo>.Timeline {
-    grid-area: timeline;
-    margin: 0%;
-    padding-bottom: 1%;
-}
-
-.ProjectInfo>.Description {
-    grid-area: description;
-    margin: 0%;
-    padding-bottom: 1%;
-    padding-left: 3%;
-    text-align: justify;
-    padding-right: 3%;
-}
-
-.ProjectInfo {
-    display: grid;
-    grid-template-areas:
-        "projectName"
-        "timeline"
-        "description"
-    ;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-#projects>h2 {
-    padding-bottom: 2%;
-}
 
 /*-------------------- EDUCATION ----------------------------*/
 .EducationInfo {
@@ -586,7 +592,8 @@ form>button:hover {
     #aboutMe,
     #skills,
     #experience,
-    #additionalExperience {
+    #additionalExperience,
+    #projects {
         padding-top: 2%;
         padding-left: 10%;
         padding-right: 10%;
@@ -652,7 +659,7 @@ form>button:hover {
     }
 
     /*------------------------ Experience -------------------------*/
-
+    /*------------------- Additional Experience -------------------*/
     .JobInfo {
         padding-top: 1%;
         padding-bottom: 1%;
@@ -668,6 +675,15 @@ form>button:hover {
         justify-self: flex-end;
     }
 
-    
+    /*------------------------ Projects -------------------------*/
+    .ProjectInfo {
+        display: grid;
+        grid-template-areas:
+            "projectName timeline"
+            "description description"
+        ;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
 
 }
