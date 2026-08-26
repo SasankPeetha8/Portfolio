@@ -1,17 +1,6 @@
 /*------------------------------------
 ------------ Layout ------------------
 ------------------------------------*/
-
-h1,
-h2,
-h3,
-label,
-a,
-p,
-svg {
-    color: #d7d728e3;
-}
-
 html,
 body {
     margin: 0;
@@ -55,19 +44,25 @@ h2 {
     margin: 0%;
 }
 
+#userProfile,
+header {
+    background-color: #232700;
+}
+
 /*----------- Address -------------*/
-/*----------- Listing Items -------------*/
-/*----------- Address -------------*/
-/*----------- Listing Items -------------*/
 
 .ContactInfo {
     border-radius: 4mm;
     padding-left: 4%;
     padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 0%;
 }
 
 .ContactInfo:hover,
 .ContactInfo:hover>svg {
+    /* background-color: #d6e881;
+    color: #232700; */
     background-color: #d6e881;
     color: #232700;
 }
@@ -75,7 +70,7 @@ h2 {
 /*-------------- Grid for Address ------------------*/
 address {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 2%;
     padding-bottom: 3%;
 }
@@ -95,6 +90,11 @@ address {
 }
 
 /*------------------- SKILLS ---------------------------------*/
+#skills {
+
+    background-color: #2f3901;
+}
+
 .userSkills {
     padding-top: 1%;
     padding-bottom: 1%;
@@ -112,9 +112,15 @@ address {
 }
 
 .userSkills:hover {
-    background-color: #d6e881;
+    background-color: #a4b25f;
 }
 
+.userSkills:hover>h3,
+.userSkills:hover>p {
+    /* background-color: #d6e881;
+    color: #232700; */
+    color: #232700;
+}
 
 .Category,
 .Details {
@@ -241,7 +247,13 @@ address {
 }
 
 .EducationInfo:hover {
-    background-color: #d6e881;
+    background-color: #a4b25f;
+}
+
+.EducationInfo:hover>.CourseName,
+.EducationInfo:hover>.CourseDuration,
+.EducationInfo:hover>.InstitutionName {
+    color: #232700;
 }
 
 
@@ -308,7 +320,9 @@ form>button {
 }
 
 form>button:hover {
-    border-color: #d6e881;
+    /* border-color: #d6e881; */
+    background-color: #d6e881;
+    color: #232700;
 
 }
 
@@ -337,7 +351,6 @@ form>button:hover {
     #userProfile {
         padding: 2%;
         margin: 0;
-        background-color: #232700;
     }
 
     /*---------- figure --------------*/
@@ -426,7 +439,7 @@ form>button:hover {
         padding-left: 3%;
         padding-right: 3%;
         padding-bottom: 8%;
-        background-color: #2f3901;
+
         text-align: justify;
     }
 
@@ -485,6 +498,8 @@ form>button:hover {
         padding-top: 2%;
         padding-bottom: 2%;
         margin-bottom: 6%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     /*---------------- Achievements -----------------*/
@@ -562,10 +577,10 @@ form>button:hover {
         padding-left: 3%;
         padding-right: 3%;
         width: 73%;
-        border-style: solid;
+        /* border-style: solid;
         border-width: 1px;
         border-color: #d7e88153;
-        border-radius: 6mm;
+        border-radius: 6mm; */
 
     }
 
@@ -577,12 +592,20 @@ form>button:hover {
         display: none;
     }
 
+    nav {
+        width: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #2f3901;
+    }
+
     .NavigationBarContent a {
         text-decoration: none;
         padding-left: 2%;
         padding-right: 2%;
         padding-top: 1%;
         padding-bottom: 1%;
+        margin-top: -1%;
     }
 
     .NavigationBarContent {
@@ -602,8 +625,8 @@ form>button:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 2%;
-        padding-bottom: 1%;
+        padding-top: 0%;
+        padding-bottom: 0%;
     }
 
     /*--------------------------------------------------------
@@ -621,8 +644,8 @@ form>button:hover {
     #contactMe,
     #copyright {
         padding-top: 2%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 16%;
+        padding-right: 16%;
         padding-bottom: 2%;
     }
 
@@ -772,4 +795,14 @@ form>button:hover {
     /*------------------------ Copyright -------------------------*/
 
 
+}
+
+h1,
+h2,
+h3,
+label,
+a,
+p,
+svg {
+    color: #d7d728e3;
 }
