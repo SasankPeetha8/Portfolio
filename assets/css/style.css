@@ -211,6 +211,39 @@ address {
     text-align: justify;
 }
 
+/*-------------------- EDUCATION ----------------------------*/
+.CourseName,
+.InstitutionName,
+.CourseDuration {
+    padding-bottom: 1%;
+    margin: 0%;
+}
+
+#education {
+    padding-top: 6%;
+    padding-bottom: 5%;
+    background-color: #2f3901;
+}
+
+#education>h2 {
+    padding-bottom: 6%;
+}
+
+.EducationInfo {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6mm;
+    border-color: #d7e88159;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.EducationInfo:hover {
+    background-color: #d6e881;
+}
+
 /*---------------------------------------------------------------
 --------------------- Mobile Layout -----------------------------
 ---------------------------------------------------------------*/
@@ -375,37 +408,22 @@ address {
         padding-bottom: 3%;
     }
 
+    /*---------------- Education -----------------*/
+    .EducationInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 4%;
+        padding-left: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 6%;
+    }
+
+
+
+
 }
 
-
-
-
-/*-------------------- EDUCATION ----------------------------*/
-.EducationInfo {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-right: 4%;
-    padding-left: 4%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-.CourseName,
-.InstitutionName,
-.CourseDuration {
-    padding-bottom: 1%;
-    margin: 0%;
-}
-
-#education {
-    padding-top: 6%;
-    padding-bottom: 5%;
-    background-color: #2f3901;
-}
-
-#education>h2 {
-    padding-bottom: 2%;
-}
 
 /*---------------------- Achivements -----------------------*/
 #achievements {
@@ -593,7 +611,9 @@ form>button:hover {
     #skills,
     #experience,
     #additionalExperience,
-    #projects {
+    #projects,
+    #education,
+    #achievements {
         padding-top: 2%;
         padding-left: 10%;
         padding-right: 10%;
@@ -686,4 +706,37 @@ form>button:hover {
         padding-bottom: 1%;
     }
 
+    /*------------------------ Education -------------------------*/
+
+
+    #education>h2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        grid-area: title;
+        padding-bottom: 2%;
+    }
+
+    #educationOne {
+        grid-area: educationOne;
+    }
+
+    #educationTwo {
+        grid-area: educationTwo;
+    }
+
+    #education {
+        display: grid;
+        grid-template-areas:
+            "title title title title"
+            ". educationOne educationTwo ."
+        ;
+        column-gap: 2%;
+        align-items: center;
+    }
+
+    /*------------------------ Achievements -------------------------*/
+    #achievements>h2 {
+        padding-bottom: 2%;
+    }
 }
