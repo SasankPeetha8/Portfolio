@@ -637,16 +637,21 @@ form>button:hover {
 
 @media (min-width: 921px) {
 
+    img {
+        width: 23vw
+    }
+
     #userProfile {
-        width: 70%;
+        width: 80%;
     }
 
     #userProfile>h1 {
-        font-size: 36px;
+        padding-top: 3%;
+        font-size: 30px;
     }
 
     #userProfile>h2 {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     /*--------------------------------------------------------
@@ -932,7 +937,7 @@ form>button:hover {
 @media (min-width: 1640px) {
 
     img {
-        width: 300px;
+        width: 400px;
     }
 
     #userProfile>h1 {
