@@ -126,6 +126,58 @@ address {
     text-align: center;
 }
 
+/*----------------------------------------------------------
+---------------------- EXPERIENCE --------------------------
+----------------------------------------------------------*/
+#experience>h2,
+#additionalExperience>h2 {
+    padding-bottom: 3%;
+}
+
+#experience,
+#additionalExperience {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*------------------- Aligning Items ------------------------*/
+
+.Title {
+    grid-area: jobTitle;
+    margin: 0;
+    padding-bottom: 1%;
+}
+
+.Organisation {
+    grid-area: organisation;
+    margin: 0;
+    padding-bottom: 1%;
+}
+
+.Timeline {
+    grid-area: timeline;
+    margin: 0;
+    padding-bottom: 1%;
+}
+
+.Description {
+    grid-area: description;
+    margin: 0;
+    padding-bottom: 1%;
+    text-align: justify;
+}
+
+#experience {
+    background-color: #232700;
+}
+
+#additionalExperience {
+    background-color: #2f3901;
+}
+
+
 
 /*---------------------------------------------------------------
 --------------------- Mobile Layout -----------------------------
@@ -256,84 +308,26 @@ address {
         margin-bottom: 3%;
     }
 
+    /*---------------- Experience -----------------*/
+    .JobInfo {
+        display: grid;
+        grid-template-areas:
+            "jobTitle"
+            "organisation"
+            "timeline"
+            "description"
+        ;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .Description {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
 }
 
-
-#achievements>h2 {
-    padding-bottom: 3%;
-}
-
-
-
-
-
-/*-------------------- EXPERIENCE ---------------------------*/
-#experience>h2,
-#additionalExperience>h2 {
-    padding-bottom: 2%;
-}
-
-#experience,
-#additionalExperience {
-    padding-top: 6%;
-    padding-bottom: 6%;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-/*------------------- Aligning Items ------------------------*/
-.JobInfo>.Title {
-    grid-area: jobTitle;
-    padding-bottom: 1%;
-    margin: 0%;
-}
-
-.JobInfo>.Organisation {
-    grid-area: organisation;
-    padding-bottom: 1%;
-    margin: 0%;
-}
-
-.JobInfo>.Timeline {
-    grid-area: timeline;
-    padding-bottom: 1%;
-    margin: 0%;
-}
-
-.JobInfo>.Description {
-    grid-area: description;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 1%;
-    margin: 0%;
-    text-align: justify;
-}
-
-.JobInfo>.Timeline {
-    grid-area: timeline;
-    padding-bottom: 1%;
-    margin: 0%;
-}
-
-.JobInfo {
-    display: grid;
-    grid-template-areas:
-        "jobTitle"
-        "organisation"
-        "timeline"
-        "description"
-    ;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-#experience {
-    background-color: #232700;
-}
-
-#additionalExperience {
-    background-color: #2f3901;
-}
 
 /*------------------- PROJECTS ----------------------------*/
 #projects {
@@ -518,8 +512,12 @@ form>button:hover {
     --------------------------------------------------------*/
     .ContactInfo {
         padding-top: 2%;
-        padding-bottom: 1%;
+        /* padding-bottom: 1%; */
     }
+
+    /* .ContactInfo>a {
+        padding-bottom: 0.6%;
+    } */
 
     /*--------------------------------------------------------
     ---------------- Grid for UserProfile --------------------
@@ -584,14 +582,18 @@ form>button:hover {
     ------------------------ MAIN ----------------------------
     --------------------------------------------------------*/
 
-    /*----------------------- ABOUT ME ----------------------*/
+    /*----------------------- Universal Padding ----------------------*/
     #aboutMe,
-    #skills {
+    #skills,
+    #experience,
+    #additionalExperience {
         padding-top: 2%;
         padding-left: 10%;
         padding-right: 10%;
         padding-bottom: 2%;
     }
+
+    /*----------------------- ABOUT ME ----------------------*/
 
     #aboutMe>p {
         margin: 0;
@@ -648,5 +650,24 @@ form>button:hover {
         align-items: center;
         padding-bottom: 6%;
     }
+
+    /*------------------------ Experience -------------------------*/
+
+    .JobInfo {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        display: grid;
+        grid-template-areas:
+            "jobTitle jobTitle"
+            "organisation timeline"
+            "description description"
+        ;
+    }
+
+    .Timeline {
+        justify-self: flex-end;
+    }
+
+    
 
 }
