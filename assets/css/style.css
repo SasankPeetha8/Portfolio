@@ -45,7 +45,8 @@ body {
 
     /*---------- figure --------------*/
     figure {
-        padding: 0%;
+        /* padding: 0%; */
+        padding-top: 3%;
         margin: 0%;
         display: flex;
         justify-content: center;
@@ -54,10 +55,6 @@ body {
     /*---------- image --------------*/
     img {
         width: 70vw;
-        height: 36vh;
-        object-fit: cover;
-        object-position: center;
-        overflow: hidden;
         border: 1px #a4b25f solid;
         border-radius: 6mm;
     }
@@ -146,7 +143,7 @@ body {
         display: flex;
         flex-direction: column;
         color: #a4b25f;
-        background-color: #232700;
+        background-color: #2f3901;
     }
 
     /*-----------------------------------------------------------
@@ -167,153 +164,12 @@ body {
         padding-bottom: 2%;
     }
 
-    /*-------------------- EXPERIENCE ---------------------------*/
-    #experience>h2,
-    #additionalExperience>h2 {
-        padding-bottom: 2%;
-    }
-
-    #experience,
-    #additionalExperience {
-        padding-top: 6%;
-        padding-bottom: 6%;
+    #skills {
+        padding-top: 8%;
         padding-left: 3%;
         padding-right: 3%;
-    }
-
-    /*------------------- Aligning Items ------------------------*/
-    .JobInfo>.Title {
-        grid-area: jobTitle;
-        padding-bottom: 1%;
-        margin: 0%;
-    }
-
-    .JobInfo>.Organisation {
-        grid-area: organisation;
-        padding-bottom: 1%;
-        margin: 0%;
-    }
-
-    .JobInfo>.Timeline {
-        grid-area: timeline;
-        padding-bottom: 1%;
-        margin: 0%;
-    }
-
-    .JobInfo>.Description {
-        grid-area: description;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-bottom: 1%;
-        margin: 0%;
-        text-align: justify;
-    }
-
-    .JobInfo>.Timeline {
-        grid-area: timeline;
-        padding-bottom: 1%;
-        margin: 0%;
-    }
-
-    .JobInfo {
-        display: grid;
-        grid-template-areas:
-            "jobTitle"
-            "organisation"
-            "timeline"
-            "description"
-        ;
-        padding-top: 3%;
-        padding-bottom: 3%;
-    }
-
-    #experience {
-        background-color: #232700;
-    }
-
-    #additionalExperience {
+        padding-bottom: 8%;
         background-color: #2f3901;
-    }
-
-    /*------------------- PROJECTS ----------------------------*/
-    #projects {
-        padding-top: 6%;
-        padding-bottom: 6%;
-        padding-left: 3%;
-        padding-right: 3%;
-        background-color: #232700;
-    }
-
-    .ProjectInfo>.Title {
-        grid-area: projectName;
-        margin: 0%;
-        padding-bottom: 1%;
-    }
-
-    .ProjectInfo>.Timeline {
-        grid-area: timeline;
-        margin: 0%;
-        padding-bottom: 1%;
-    }
-
-    .ProjectInfo>.Description {
-        grid-area: description;
-        margin: 0%;
-        padding-bottom: 1%;
-        padding-left: 3%;
-        text-align: justify;
-        padding-right: 3%;
-    }
-
-    .ProjectInfo {
-        display: grid;
-        grid-template-areas:
-            "projectName"
-            "timeline"
-            "description"
-        ;
-        padding-top: 3%;
-        padding-bottom: 3%;
-    }
-
-    #projects>h2 {
-        padding-bottom: 2%;
-    }
-
-    /*-------------------- EDUCATION ----------------------------*/
-    .EducationInfo {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-right: 4%;
-        padding-left: 4%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-
-    .CourseName,
-    .InstitutionName,
-    .CourseDuration {
-        padding-bottom: 1%;
-        margin: 0%;
-    }
-
-    #education {
-        padding-top: 6%;
-        padding-bottom: 5%;
-        background-color: #2f3901;
-    }
-
-    #education>h2 {
-        padding-bottom: 2%;
-    }
-
-    /*---------------------- Achivements -----------------------*/
-    #achievements {
-        padding-top: 6%;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-bottom: 6%;
-        background-color: #232700;
         text-align: justify;
     }
 
@@ -321,80 +177,280 @@ body {
         padding-bottom: 3%;
     }
 
-    /*-----------------------------------------------------------
-    ------------------------- FOOTER ----------------------------
-    -----------------------------------------------------------*/
-
-    /*---------------------- Contact Me ---------------------------*/
-    #contactMe {
-        /* margin-top: 10%; */
-        margin-top: 0%;
-        padding-top: 6%;
-        width: 100%;
-        background-color: #a4b25f;
+    .userSkills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-bottom: 3%;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 6mm;
+        border-color: #d7e88159;
     }
 
-    #contactMe>h2,
-    form>label {
+    .userSkills:hover {
+        background-color: #d6e881;
+    }
+
+    .userSkills:hover>.Category,
+    .userSkills:hover>.Details {
         color: #232700;
     }
 
-    #contactMe>h2 {
-        margin: 0;
-    }
-
-    form>label {
-        margin-top: 10px;
-        margin-bottom: 3px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-bottom: 6%;
-    }
-
-    form>button {
-        margin-top: 6%;
-        width: 20%;
-        align-self: center;
-        border-radius: 3mm;
-        border-width: 2px;
-        border-color: #5a6232;
-        border-style: solid;
-        padding: 1%;
-        background-color: #5a6232;
-        color: #d6e881;
-    }
-
-    form>button:hover {
-        border-color: #d6e881;
-
-    }
-
-    /*---------------------- Copyright ---------------------------*/
-
-    #copyright {
-        margin-top: 0%;
-        padding-right: 2%;
-        padding-left: 2%;
-        background-color: #232700;
-    }
-
-    #copyright>h2 {
-        padding-top: 6%;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    .CopyrightInformation {
+    .Category,
+    .Details {
+        margin: 0%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
         text-align: center;
-        margin-top: 10px;
-        margin-bottom: 0;
-        padding-bottom: 6%;
-        /* padding-bottom: 13px; */
     }
 
+    #skills>h2 {
+        padding-bottom: 6%;
+    }
+
+}
+
+/*-------------------- EXPERIENCE ---------------------------*/
+#experience>h2,
+#additionalExperience>h2 {
+    padding-bottom: 2%;
+}
+
+#experience,
+#additionalExperience {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*------------------- Aligning Items ------------------------*/
+.JobInfo>.Title {
+    grid-area: jobTitle;
+    padding-bottom: 1%;
+    margin: 0%;
+}
+
+.JobInfo>.Organisation {
+    grid-area: organisation;
+    padding-bottom: 1%;
+    margin: 0%;
+}
+
+.JobInfo>.Timeline {
+    grid-area: timeline;
+    padding-bottom: 1%;
+    margin: 0%;
+}
+
+.JobInfo>.Description {
+    grid-area: description;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    margin: 0%;
+    text-align: justify;
+}
+
+.JobInfo>.Timeline {
+    grid-area: timeline;
+    padding-bottom: 1%;
+    margin: 0%;
+}
+
+.JobInfo {
+    display: grid;
+    grid-template-areas:
+        "jobTitle"
+        "organisation"
+        "timeline"
+        "description"
+    ;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#experience {
+    background-color: #232700;
+}
+
+#additionalExperience {
+    background-color: #2f3901;
+}
+
+/*------------------- PROJECTS ----------------------------*/
+#projects {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #232700;
+}
+
+.ProjectInfo>.Title {
+    grid-area: projectName;
+    margin: 0%;
+    padding-bottom: 1%;
+}
+
+.ProjectInfo>.Timeline {
+    grid-area: timeline;
+    margin: 0%;
+    padding-bottom: 1%;
+}
+
+.ProjectInfo>.Description {
+    grid-area: description;
+    margin: 0%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    text-align: justify;
+    padding-right: 3%;
+}
+
+.ProjectInfo {
+    display: grid;
+    grid-template-areas:
+        "projectName"
+        "timeline"
+        "description"
+    ;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#projects>h2 {
+    padding-bottom: 2%;
+}
+
+/*-------------------- EDUCATION ----------------------------*/
+.EducationInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.CourseName,
+.InstitutionName,
+.CourseDuration {
+    padding-bottom: 1%;
+    margin: 0%;
+}
+
+#education {
+    padding-top: 6%;
+    padding-bottom: 5%;
+    background-color: #2f3901;
+}
+
+#education>h2 {
+    padding-bottom: 2%;
+}
+
+/*---------------------- Achivements -----------------------*/
+#achievements {
+    padding-top: 6%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 6%;
+    background-color: #232700;
+    text-align: justify;
+}
+
+#achievements>h2 {
+    padding-bottom: 3%;
+}
+
+/*-----------------------------------------------------------
+    ------------------------- FOOTER ----------------------------
+    -----------------------------------------------------------*/
+
+/*---------------------- Contact Me ---------------------------*/
+#contactMe {
+    /* margin-top: 10%; */
+    margin-top: 0%;
+    padding-top: 6%;
+    width: 100%;
+    background-color: #a4b25f;
+}
+
+#contactMe>h2,
+form>label {
+    color: #232700;
+}
+
+#contactMe>h2 {
+    margin: 0;
+}
+
+form>label {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 6%;
+}
+
+form>input,
+form>textarea {
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* border-radius: 3mm; */
+    border-width: 0%;
+    border-style: none;
+}
+
+form>button {
+    margin-top: 6%;
+    width: 20%;
+    align-self: center;
+    border-radius: 3mm;
+    border-width: 2px;
+    border-color: #5a6232;
+    border-style: solid;
+    padding: 1%;
+    background-color: #5a6232;
+    color: #d6e881;
+}
+
+form>button:hover {
+    border-color: #d6e881;
+
+}
+
+/*---------------------- Copyright ---------------------------*/
+
+#copyright {
+    margin-top: 0%;
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: #232700;
+}
+
+#copyright>h2 {
+    padding-top: 6%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.CopyrightInformation {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 6%;
+    /* padding-bottom: 13px; */
 }
