@@ -461,30 +461,56 @@ form>button:hover {
 
     /*------------- Navigation Bar -----------------------*/
     /*---------- Default Behaviour ---------------*/
-    nav {
+    .NavigationMajorSection {
         margin-top: 0%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
         width: 100%;
         margin-bottom: 0;
+        background-color: #2f3901;
     }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .MenuBarSection {
+        width: 100%;
+    }
+
+    .FilterBarSection {
+        width: 20%;
+    }
+
 
     .MenuButton {
         width: 100%;
-        padding-top: 2%;
-        padding-bottom: 1%;
+        padding-top: 3px;
+        padding-bottom: 3px;
         font-size: 18px;
         border: 0;
         background-color: #a4b25f;
     }
 
-    .NavigationBarContent {
+    .FilterButton {
+        width: 100%;
+        font-size: 18px;
+        background-color: #5a6232;
+        border-style: none;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        height: 31px;
+    }
+
+    .MenuBarContent {
         display: none;
         width: 100%;
     }
 
-    .NavigationBarContent a {
+    .MenuBarContent a {
         display: block;
         text-align: center;
         padding-top: 6px;
@@ -492,16 +518,69 @@ form>button:hover {
         text-decoration: none;
     }
 
-    .NavigationBarContent a:hover {
-        background-color: #a4b25f;
-        color: #232700;
+    .MenuBarSection:hover>.MenuBarContent>a {
+        color: #919d28;
     }
 
-    nav:hover .NavigationBarContent {
+    .MenuBarContent:hover>a:hover {
+        /* background-color: #a4b25f; */
+        text-decoration: underline;
+        color: #e6ff01;
+    }
+
+    .MenuBarSection:hover>.MenuBarContent {
         display: flex;
         flex-direction: column;
-        color: #a4b25f;
+        color: #5e6c17;
         background-color: #2f3901;
+    }
+
+    .NavigationMinorSection {
+        /* justify-content: end; */
+        /* justify-items: end; */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    .FilterBarContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2px;
+        width: 290px;
+        background-color: #919d28;
+    }
+
+    .FilterSubmitButton {
+        /* width: 100%; */
+        width: 90px;
+    }
+
+    .FilterResetButton {
+        width: 90px;
+    }
+
+    .FilterBarContent>label {
+        width: 200px;
+        justify-self: end;
+    }
+
+
+    .FilterBarContent>input,
+    .FilterResetButton,
+    .FilterSubmitButton {
+        justify-self: center;
+    }
+
+    .FilterSubmitButton {
+        width: 98%;
+        margin-right: 4px;
+    }
+
+    .FilterSubmitButton,
+    .FilterResetButton {
+        border: none;
     }
 
     /*------------ About Me ---------------*/
@@ -715,7 +794,7 @@ form>button:hover {
         background-color: #2f3901;
     }
 
-    .NavigationBarContent a {
+    .MenuBarContent a {
         text-decoration: none;
         padding-left: 2%;
         padding-right: 2%;
@@ -725,7 +804,7 @@ form>button:hover {
         font-size: 15px;
     }
 
-    .NavigationBarContent {
+    .MenuBarContent {
         padding-top: 1%;
         display: flex;
         flex-direction: row;
@@ -734,7 +813,7 @@ form>button:hover {
         align-items: center;
     }
 
-    .NavigationBarContent a:hover {
+    .MenuBarContent a:hover {
         background-color: #d6e881;
         color: #232700;
     }
@@ -952,7 +1031,7 @@ form>button:hover {
     }
 
     #userProfile>p,
-    .NavigationBarContent>a {
+    .MenuBarContent>a {
         font-size: 26px;
         padding-bottom: 1%;
     }

@@ -38,16 +38,55 @@
 
             </section>
             <nav>
-                <button class="MenuButton">Menu</button>
-                <section class="NavigationBarContent">
-                    <a href="#aboutMe">About Me</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#additionalExperience">Additional Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#education">Education</a>
-                    <a href="#achievements">Achievements</a>
-                    <a href="#contactMe">Contact Me</a>
+                <section class="NavigationMajorSection">
+                    <section class="MenuBarSection">
+                        <button class="MenuButton">Menu</button>
+                        <section class="MenuBarContent">
+                            <a href="#aboutMe">About Me</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#additionalExperience">Additional Experience</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#education">Education</a>
+                            <a href="#achievements">Achievements</a>
+                            <a href="#contactMe">Contact Me</a>
+                        </section>
+                    </section>
+                    <section class="FilterBarSection">
+                        <button class="FilterButton" tabindex="0">Filter</button>
+                    </section>
+                </section>
+                <section class="NavigationMinorSection">
+
+                    <section class="FilterBarContent">
+                        <input type="checkbox" id="aboutMeElement" name="aboutMeVariable" value="elementValue1" checked>
+                        <label for="aboutMeElement">About Me</label>
+
+                        <input type="checkbox" id="skillsElement" name="skillsVariable" value="elementValue2">
+                        <label for="skillsElement">Skills</label>
+
+                        <input type="checkbox" id="experienceElement" name="experienceVariable" value="elementValue3">
+                        <label for="experienceElement">Experience</label>
+
+                        <input type="checkbox" id="additionalExperienceElement" name="additionalExperienceVariable" value="elementValue4">
+                        <label for="additionalExperienceElement">Additional Experience</label>
+
+                        <input type="checkbox" id="projectsElement" name="projectVariable" value="elementValue5">
+                        <label for="projectsElement">Projects</label>
+
+                        <input type="checkbox" id="educationElement" name="educationVariable" value="elementValue6">
+                        <label for="educationElement">Education</label>
+
+                        <input type="checkbox" id="achievementsElement" name="achievementsVariable" value="elementValue7">
+                        <label for="achievementsElement">Achievements</label>
+
+                        <input type="checkbox" id="contactMeElement" name="contactMeVariable" value="elementValue8">
+                        <label for="contactMeElement">Contact Me</label>
+
+                        <button class="FilterResetButton">Reset</button>
+                        <button class="FilterSubmitButton">Submit</button>
+                    </section>
+
                 </section>
             </nav>
         </header>
