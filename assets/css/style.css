@@ -141,6 +141,104 @@ address {
     flex-wrap: wrap;
 }
 
+/*---------------- Navigation Menu -------------------*/
+/*------------- Navigation Bar -----------------------*/
+/*---------- Default Behaviour ---------------*/
+.NavigationMajorSection {
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #2f3901;
+}
+
+.MenuBarSection {
+    width: 100%;
+}
+
+.FilterBarSection {
+    width: 20%;
+}
+
+
+.FilterButton {
+    width: 100%;
+    font-size: 18px;
+    background-color: #818d47;
+    border-style: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+.MenuBarContent {
+    display: none;
+    width: 100%;
+}
+
+.MenuBarContent a {
+    display: block;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;
+}
+
+.NavigationMinorSection {
+    /* justify-content: end; */
+    /* justify-items: end; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.FilterBarContent {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3px;
+    width: 300px;
+    background-color: #71773b76;
+    cursor: pointer;
+}
+
+/* .FilterBarSection:hover .FilterBarContent, */
+.FilterBarSection:focus-within .FilterBarContent {
+    display: grid;
+}
+
+#FilterSubmitButton {
+    /* width: 100%; */
+    /* width: 90px; */
+    width: 98%;
+    margin-right: 4px;
+    padding-bottom: 3px;
+}
+
+#FilterResetButton {
+    width: 70px;
+    padding-bottom: 3px;
+}
+
+.FilterBarContent>label {
+    width: 200px;
+    justify-self: end;
+}
+
+
+.FilterBarContent>input,
+#FilterResetButton,
+#FilterSubmitButton {
+    justify-self: center;
+}
+
+#FilterSubmitButton,
+#FilterResetButton {
+    border: none;
+}
+
 /*-----------------------------------------------------------
 ------------------------- MAIN ------------------------------
 -----------------------------------------------------------*/
@@ -459,30 +557,11 @@ form>button:hover {
         padding-bottom: 2%;
     }
 
-    /*------------- Navigation Bar -----------------------*/
-    /*---------- Default Behaviour ---------------*/
-    .NavigationMajorSection {
-        margin-top: 0%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        margin-bottom: 0;
-        background-color: #2f3901;
-    }
-
+    /*--------------- Navigation Menu -------------------*/
     nav {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-
-    .MenuBarSection {
-        width: 100%;
-    }
-
-    .FilterBarSection {
-        width: 20%;
     }
 
 
@@ -495,27 +574,11 @@ form>button:hover {
         background-color: #a4b25f;
     }
 
-    .FilterButton {
-        width: 100%;
-        font-size: 18px;
-        background-color: #818d47;
-        border-style: none;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        height: 31px;
-    }
-
-    .MenuBarContent {
-        display: none;
-        width: 100%;
-    }
-
-    .MenuBarContent a {
-        display: block;
-        text-align: center;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        text-decoration: none;
+    .MenuBarSection:hover>.MenuBarContent {
+        display: flex;
+        flex-direction: column;
+        color: #5e6c17;
+        background-color: #2f3901;
     }
 
     .MenuBarSection:hover>.MenuBarContent>a {
@@ -528,59 +591,10 @@ form>button:hover {
         color: #e6ff01;
     }
 
-    .MenuBarSection:hover>.MenuBarContent {
-        display: flex;
-        flex-direction: column;
-        color: #5e6c17;
-        background-color: #2f3901;
-    }
-
-    .NavigationMinorSection {
-        /* justify-content: end; */
-        /* justify-items: end; */
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
-    }
-
-    .FilterBarContent {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2px;
-        width: 290px;
-        background-color: #71773b76;
-    }
-
-    #FilterSubmitButton {
-        /* width: 100%; */
-        width: 90px;
-    }
-
-    #FilterResetButton {
-        width: 90px;
-    }
-
-    .FilterBarContent>label {
-        width: 200px;
-        justify-self: end;
-    }
-
-
-    .FilterBarContent>input,
-    #FilterResetButton,
-    #FilterSubmitButton {
-        justify-self: center;
-    }
-
-    #FilterSubmitButton {
-        width: 98%;
-        margin-right: 4px;
-    }
-
-    #FilterSubmitButton,
-    #FilterResetButton {
-        border: none;
+    .FilterButton {
+        height: auto;
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 
     /*------------ About Me ---------------*/
@@ -794,6 +808,17 @@ form>button:hover {
         background-color: #2f3901;
     }
 
+    .NavigationMajorSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .MenuBarSection {
+        width: 100%;
+    }
+
     .MenuBarContent a {
         text-decoration: none;
         padding-left: 2%;
@@ -801,7 +826,6 @@ form>button:hover {
         padding-top: 1%;
         padding-bottom: 1%;
         margin-top: -1%;
-        font-size: 15px;
     }
 
     .MenuBarContent {
@@ -811,11 +835,24 @@ form>button:hover {
         justify-content: space-evenly;
         flex-wrap: nowrap;
         align-items: center;
+
     }
 
     .MenuBarContent a:hover {
         background-color: #d6e881;
         color: #232700;
+    }
+
+    .FilterBarContent {
+        display: none;
+        width: 250px;
+    }
+
+
+    .FilterButton {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        height: auto;
     }
 
     header {
@@ -1011,6 +1048,19 @@ form>button:hover {
         padding-top: 0%;
         padding-bottom: 4%;
     }
+
+    .FilterButton {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .FilterButton {
+        padding-top: 14px;
+        padding-bottom: 14px;
+
+    }
 }
 
 @media (min-width: 1640px) {
@@ -1028,6 +1078,20 @@ form>button:hover {
     #userProfile>h2 {
         font-size: 40px;
         padding-bottom: 1%;
+    }
+
+    .FilterButton {
+        padding-top: 23px;
+        padding-bottom: 22px;
+        font-size: 30px;
+    }
+
+    .FilterBarContent {
+        width: 350px;
+    }
+
+    #FilterResetButton {
+        width: fit-content;
     }
 
     #userProfile>p,

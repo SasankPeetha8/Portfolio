@@ -15,8 +15,11 @@ function DisableElementDisplay(elementId) {
 }
 
 function ApplyFilterAction() {
+    // 
+    console.log(`Inside the Apply Filter Action`)
     // Iterating through all of it's elements
     for (let index = 0; index < FILTER_ITEMS.length; index++) {
+        const eachFilterElement = FILTER_ITEMS[index];
         // checking if the filter elemenet is disable or not
         if (eachFilterElement.checked)
         {
