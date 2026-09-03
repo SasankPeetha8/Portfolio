@@ -498,7 +498,7 @@ form>button:hover {
     .FilterButton {
         width: 100%;
         font-size: 18px;
-        background-color: #5a6232;
+        background-color: #818d47;
         border-style: none;
         padding-top: 2px;
         padding-bottom: 2px;
@@ -549,15 +549,15 @@ form>button:hover {
         grid-template-columns: 1fr 1fr;
         column-gap: 2px;
         width: 290px;
-        background-color: #919d28;
+        background-color: #71773b76;
     }
 
-    .FilterSubmitButton {
+    #FilterSubmitButton {
         /* width: 100%; */
         width: 90px;
     }
 
-    .FilterResetButton {
+    #FilterResetButton {
         width: 90px;
     }
 
@@ -568,18 +568,18 @@ form>button:hover {
 
 
     .FilterBarContent>input,
-    .FilterResetButton,
-    .FilterSubmitButton {
+    #FilterResetButton,
+    #FilterSubmitButton {
         justify-self: center;
     }
 
-    .FilterSubmitButton {
+    #FilterSubmitButton {
         width: 98%;
         margin-right: 4px;
     }
 
-    .FilterSubmitButton,
-    .FilterResetButton {
+    #FilterSubmitButton,
+    #FilterResetButton {
         border: none;
     }
 
@@ -1079,4 +1079,8 @@ a,
 p,
 svg {
     color: #d7d728e3;
+}
+
+.HideElement {
+    display: none;
 }
