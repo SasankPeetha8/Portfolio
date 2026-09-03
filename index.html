@@ -210,12 +210,13 @@
                 <h2>Contact Me</h2>
                 <form>
                     <label for="userName">Full Name:</label>
-                    <input id="userName" type="text" name="username" placeholder="Enter your full name" />
+                    <input id="userName" type="text" name="username" placeholder="Enter your full name" minlength="4" maxlength="20" pattern="[A-Za-z0-9._-]{4,20}" required />
                     <label for="emailAddress">Email Address:</label>
-                    <input id="emailAddress" type="email" name="email" placeholder="abcdefgh@email.com" />
+                    <input id="emailAddress" type="email" name="email" placeholder="abcdefgh@email.com" required />
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" cols="60" placeholder="Enter your message here..."></textarea>
-                    <button type="button">Submit</button>
+                    <textarea id="message" name="message" rows="6" cols="60" placeholder="Enter your message here..." minlength="10"
+                    maxlength="1000" required></textarea>
+                    <button type="button" id="FormSubmitButton">Submit</button>
                 </form>
             </section>
             <section id="copyright">

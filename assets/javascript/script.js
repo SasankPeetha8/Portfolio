@@ -53,3 +53,9 @@ function ResetFilterAction() {
 document.getElementById('FilterSubmitButton').addEventListener("click", ApplyFilterAction);
 // Adding Event Listener to Reset Button
 document.getElementById('FilterResetButton').addEventListener('click', ResetFilterAction);
+// Adding Event Listener to Submit Button in the form
+document.getElementById('FormSubmitButton').addEventListener('click', 
+    function () {
+        alert('This project is part of course-work. There is not server-side implementation yet. Hence, no message will be sent.');
+    }
+);
